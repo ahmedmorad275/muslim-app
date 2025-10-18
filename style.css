@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+body {
+  direction: rtl;
+  background: linear-gradient(
+    to bottom right,
+    oklch(0.979 0.021 166.113),
+    oklch(0.97 0.014 254.604)
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 90%;
+  max-width: 1170px;
+  padding: 15px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .header .image {
+  background-color: green;
+  font-size: 40px;
+  padding: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+nav .header h2 {
+  cursor: pointer;
+}
+.dark-light-mode {
+  padding: 10px;
+  font-size: 25px;
+  background-color: oklch(63.187% 0.18673 147.227 / 0.59);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-moon {
+  cursor: pointer;
+  color: #fff;
+}
+.welcome {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.glance {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.glance p {
+  width: 50%;
+  min-width: 270px;
+  margin: auto;
+}
+.main-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.section {
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s all ease-in-out;
+}
+.section:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+.section div {
+  background: green;
+  width: fit-content;
+  margin: 0 auto 0.5rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 22px;
+  color: white;
+}
+.section h4 {
+  font-size: 1.3rem;
+}
+footer {
+  margin: 1rem auto;
+  width: fit-content;
+  text-align: center;
+}
+footer p {
+  color: #5e5e5e;
+}
+
+@media (min-width: 300px) and (max-width: 440px) {
+  .glance p {
+    font-size: 12px;
+  }
+  .welcome h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+  }
+  .main-sections {
+    grid-template-columns: 1fr;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 441px) and (max-width: 855px) {
+  .glance p {
+    width: 75%;
+    font-size: 14px;
+  }
+}

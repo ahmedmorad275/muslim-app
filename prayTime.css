@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+body {
+  direction: rtl;
+  background: linear-gradient(
+    to bottom right,
+    oklch(0.979 0.021 166.113),
+    oklch(0.97 0.014 254.604)
+  );
+  height: 100vh;
+}
+/* End Of Navigation */
+nav .container {
+  width: 90%;
+  max-width: 1170px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  color: #fff;
+}
+nav {
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    oklch(0.596 0.145 163.225),
+    oklch(0.432 0.095 166.913)
+  );
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .header .image {
+  background-color: green;
+  font-size: 40px;
+  padding: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+nav .header h2 {
+  cursor: pointer;
+}
+.dark-light-mode {
+  padding: 10px;
+  font-size: 25px;
+  background-color: oklch(63.187% 0.18673 147.227 / 0.368);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-moon {
+  cursor: pointer;
+}
+.loc-time,
+.time,
+.location {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+.time i,
+.location i {
+  transform: translateY(-5px);
+}
+.loc-time {
+  gap: 15px;
+}
+/* End Of Navigation */
+/* Start of Footer */
+footer {
+  margin: 1rem auto;
+  width: fit-content;
+  text-align: center;
+}
+footer p {
+  color: #5e5e5e;
+}
+/* End of Footer */
+.container {
+  width: 90%;
+  max-width: 1170px;
+  padding: 15px;
+  margin: auto;
+}
+.title {
+  text-align: center;
+}
+.title h1 {
+  color: oklch(0.432 0.095 166.913);
+}
+.title p {
+  color: #0d513a99;
+}
+.choose-city {
+  margin-top: 10px;
+}
+.choose-city select {
+  width: 50%;
+  min-width: 210px;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  background-color: #5dc2a199;
+}
+.next-pray-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  background: linear-gradient(
+    to bottom right,
+    oklch(0.596 0.145 163.225),
+    oklch(0.432 0.095 166.913)
+  );
+  border-radius: 20px;
+  padding: 15px 40px;
+  color: #fff;
+}
+.nex-pray p {
+  color: #006045;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.time-text,
+.date-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.pray-info {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #ffffff6d;
+  border-radius: 20px;
+}
+.city-text {
+  display: flex;
+  color: #006045;
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.pray-times {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 15px;
+}
+.pray {
+  margin-top: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+  background-color: #5dc2a199;
+  padding: 20px;
+  line-height: 2.5;
+  transition: 0.3s all ease-in-out;
+}
+.pray:hover {
+  transform: translateY(-10px);
+}
+@media (max-width: 558px) {
+  .title h1 {
+    color: oklch(0.432 0.095 166.913);
+    font-size: 23px;
+  }
+  .pray-times {
+    grid-template-columns: 1fr;
+  }
+
+  .next-pray-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .current-time {
+    display: flex;
+    gap: 15px;
+  }
+  .loc-time {
+    display: none;
+  }
+  nav .header h2 {
+    font-size: 1.3rem;
+  }
+}

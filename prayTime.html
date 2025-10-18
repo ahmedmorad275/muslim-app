@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مسلم - مواقيت الصلاة</title>
+    <link rel="stylesheet" href="prayTime.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="header">
+          <div class="image">🕌</div>
+          <div class="text">
+            <h2>مواقيت الصلاة</h2>
+            <div class="loc-time">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>القاهرة - مصر</p>
+              </div>
+              <div class="time">
+                <i class="fa-regular fa-clock"></i>
+                <p id="timeNow">15:30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dark-light-mode"><i class="fa-solid fa-moon"></i></div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="title">
+        <h1>مواقيت الصلاة في القاهرة</h1>
+        <p>يمكنك عرض مواقيت الصلاة حسب مدينتك</p>
+        <div class="choose-city">
+          <select name="city" id="city">
+            <option value="cairo">القاهرة</option>
+            <option value="alex">اللإسكندرية</option>
+            <option value="tanta">طنطا</option>
+            <option value="damnhour">دمنهور</option>
+          </select>
+        </div>
+      </div>
+      <div class="next-pray-container">
+        <div class="current-time">
+          <div class="time-text">
+            <i class="fa-regular fa-clock"></i>
+            <h4>الوقت الحالي</h4>
+          </div>
+          <p id="timeNowForNextPray">20:40</p>
+        </div>
+        <div class="nex-pray">
+          <h4>الصلاة القادمة</h4>
+          <h2>الفجر</h2>
+          <p>08:20</p>
+        </div>
+        <div class="date">
+          <div class="date-text">
+            <i class="fa-regular fa-calendar-days"></i>
+            <h4>التاريخ الهجري</h4>
+          </div>
+          <p>26 ربيع الثاني 1447</p>
+        </div>
+      </div>
+      <div class="pray-info">
+        <div class="city-text">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4 class="city-title">القاهرة</h4>
+        </div>
+        <div class="pray-times">
+          <div class="pray">
+            <i></i>
+            <h4>الفجر</h4>
+            <p>05:01</p>
+          </div>
+          <div class="pray">
+            <i></i>
+            <h4>الشروق</h4>
+            <p>06:30</p>
+          </div>
+          <div class="pray">
+            <i></i>
+            <h4>الظهر</h4>
+            <p>12:20</p>
+          </div>
+          <div class="pray">
+            <i></i>
+            <h4>العصر</h4>
+            <p>16:04</p>
+          </div>
+          <div class="pray">
+            <i></i>
+            <h4>المغرب</h4>
+            <p>18:55</p>
+          </div>
+          <div class="pray">
+            <i></i>
+            <h4>العشاء</h4>
+            <p>20:10</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>All rights reserved | Ahmed Morad</p>
+      </footer>
+    </div>
+    <script src="prayTime.js"></script>
+  </body>
+</html>
