@@ -2,154 +2,154 @@
 const egyGov = [
   {
     serial: 1,
-    nameAr: "القاهرة",
-    code: "Cairo",
+    nameAr: 'القاهرة',
+    code: 'Cairo',
   },
   {
     serial: 2,
-    nameAr: "الإسكندرية",
-    code: "Alexandria",
+    nameAr: 'الإسكندرية',
+    code: 'Alexandria',
   },
   {
     serial: 3,
-    nameAr: "الغربية",
-    code: "Tanta",
+    nameAr: 'الغربية',
+    code: 'Tanta',
   },
   {
     serial: 4,
-    nameAr: "البحيرة",
-    code: "Beheira",
+    nameAr: 'البحيرة',
+    code: 'Beheira',
   },
   {
     serial: 5,
-    nameAr: "الدقهلية",
-    code: "Dakahlia",
+    nameAr: 'الدقهلية',
+    code: 'Dakahlia',
   },
   {
     serial: 6,
-    nameAr: "الشرقية",
-    code: "	Al Sharqia",
+    nameAr: 'الشرقية',
+    code: 'Al Sharqia',
   },
   {
     serial: 7,
-    nameAr: "القليوبية",
-    code: "Qalyubia",
+    nameAr: 'القليوبية',
+    code: 'Qalyubia',
   },
   {
     serial: 8,
-    nameAr: "أسوان",
-    code: "Aswan",
+    nameAr: 'أسوان',
+    code: 'Aswan',
   },
   {
     serial: 9,
-    nameAr: "الجيزة",
-    code: "Giza",
+    nameAr: 'الجيزة',
+    code: 'Giza',
   },
   {
     serial: 10,
-    nameAr: "سوهاج",
-    code: "Sohag",
+    nameAr: 'سوهاج',
+    code: 'Sohag',
   },
   {
     serial: 11,
-    nameAr: "الفيوم",
-    code: "Faiyum",
+    nameAr: 'الفيوم',
+    code: 'Faiyum',
   },
   {
     serial: 12,
-    nameAr: "المنوفية",
-    code: "Monufia",
+    nameAr: 'المنوفية',
+    code: 'Monufia',
   },
   {
     serial: 13,
-    nameAr: "أسيوط",
-    code: "Asyut",
+    nameAr: 'أسيوط',
+    code: 'Asyut',
   },
   {
     serial: 14,
-    nameAr: "الأقصر",
-    code: "Luxor",
+    nameAr: 'الأقصر',
+    code: 'Luxor',
   },
   {
     serial: 15,
-    nameAr: "قنا",
-    code: "Qena",
+    nameAr: 'قنا',
+    code: 'Qena',
   },
   {
     serial: 16,
-    nameAr: "البحر الأحمر",
-    code: "RedSea",
+    nameAr: 'البحر الأحمر',
+    code: 'alBahralAhmar',
   },
   {
     serial: 17,
-    nameAr: "بني سويف",
-    code: "BeniSuef",
+    nameAr: 'بني سويف',
+    code: 'BeniSuef',
   },
   {
     serial: 18,
-    nameAr: "دمياط",
-    code: "Damietta",
+    nameAr: 'دمياط',
+    code: 'Domiat',
   },
   {
     serial: 19,
-    nameAr: "الإسماعيلية",
-    code: "Ismailia",
+    nameAr: 'الإسماعيلية',
+    code: 'Ismailia',
   },
   {
     serial: 20,
-    nameAr: "جنوب سيناء",
-    code: "SouthSinai",
+    nameAr: 'جنوب سيناء',
+    code: 'SouthSinai',
   },
   {
     serial: 21,
-    nameAr: "كفر الشيخ",
-    code: "Kafrel-Sheikh",
+    nameAr: 'كفر الشيخ',
+    code: 'Kafrel-Sheikh',
   },
   {
     serial: 22,
-    nameAr: "المنيا",
-    code: "Minya",
+    nameAr: 'المنيا',
+    code: 'Minya',
   },
   {
     serial: 23,
-    nameAr: "مطروح",
-    code: "Matrouh",
+    nameAr: 'مطروح',
+    code: 'Matrouh',
   },
   {
     serial: 24,
-    nameAr: "بورسعيد",
-    code: "Port Said",
+    nameAr: 'بورسعيد',
+    code: 'Port Said',
   },
   {
     serial: 25,
-    nameAr: "السويس",
-    code: "Suez",
+    nameAr: 'السويس',
+    code: 'Suez',
   },
   {
     serial: 26,
-    nameAr: "شمال سيناء",
-    code: "NorthSinai",
+    nameAr: 'شمال سيناء',
+    code: 'NorthSinai',
   },
   {
     serial: 27,
-    nameAr: "الوادي الجديد",
-    code: "NewValley",
+    nameAr: 'الوادي الجديد',
+    code: 'NewValley',
   },
 ];
 
 // DOM Variables
-const cityOptions = document.getElementById("city");
-const fajr = document.getElementById("fajr");
-const sunrise = document.getElementById("sunrise");
-const dhuhr = document.getElementById("dhuhr");
-const asr = document.getElementById("asr");
-const maghrib = document.getElementById("maghrib");
-const isha = document.getElementById("isha");
-const nextPrayName = document.getElementById("nextPrayName");
-const selectCity = document.getElementById("selectCity");
+const cityOptions = document.getElementById('city');
+const fajr = document.getElementById('fajr');
+const sunrise = document.getElementById('sunrise');
+const dhuhr = document.getElementById('dhuhr');
+const asr = document.getElementById('asr');
+const maghrib = document.getElementById('maghrib');
+const isha = document.getElementById('isha');
+const nextPrayName = document.getElementById('nextPrayName');
+const selectCity = document.getElementById('selectCity');
 
 // Filling Governments
-cityOptions.innerHTML = "";
+cityOptions.innerHTML = '';
 for (let i = 0; i < egyGov.length; i++) {
   cityOptions.innerHTML += `<option value="${egyGov[i].code}" data-code="${egyGov[i].nameAr}">${egyGov[i].nameAr}</option>`;
 }
@@ -172,11 +172,11 @@ async function getData(city) {
     isha.textContent = timings.Isha;
     let dateHigri =
       result.data.date.hijri.day +
-      " " +
+      ' ' +
       result.data.date.hijri.month.ar +
-      " " +
+      ' ' +
       result.data.date.hijri.year;
-    document.getElementById("date-hijri").textContent = dateHigri;
+    document.getElementById('date-hijri').textContent = dateHigri;
   } catch (error) {
     console.error(error.message);
   }
@@ -192,20 +192,20 @@ async function nextPray(city) {
     const timings = result.data.timings;
     console.log(result);
     switch (Object.keys(timings)[0]) {
-      case "Fajr":
-        nextPrayName.textContent = "الفجر";
+      case 'Fajr':
+        nextPrayName.textContent = 'الفجر';
         break;
-      case "Dhuhr":
-        nextPrayName.textContent = "الظهر";
+      case 'Dhuhr':
+        nextPrayName.textContent = 'الظهر';
         break;
-      case "Asr":
-        nextPrayName.textContent = "العصر";
+      case 'Asr':
+        nextPrayName.textContent = 'العصر';
         break;
-      case "Maghrib":
-        nextPrayName.textContent = "المغرب";
+      case 'Maghrib':
+        nextPrayName.textContent = 'المغرب';
         break;
-      case "Isha":
-        nextPrayName.textContent = "العشاء";
+      case 'Isha':
+        nextPrayName.textContent = 'العشاء';
         break;
     }
     function countDown() {
@@ -220,14 +220,14 @@ async function nextPray(city) {
       );
       let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("nextPrayCountDown").textContent = `${String(
+      document.getElementById('nextPrayCountDown').textContent = `${String(
         hours
       ).padStart(2, 0)}:${String(minutes).padStart(2, 0)}:${String(
         seconds
       ).padStart(2, 0)}`;
     }
     const intervalCount = setInterval(countDown, 1000);
-    cityOptions.addEventListener("change", () => {
+    cityOptions.addEventListener('change', () => {
       clearInterval(intervalCount);
     });
   } catch (error) {
@@ -236,18 +236,18 @@ async function nextPray(city) {
 }
 
 // Start Event Listeners
-cityOptions.addEventListener("change", () => {
+cityOptions.addEventListener('change', () => {
   const newCity = cityOptions.value;
   selectCity.textContent =
     cityOptions.options[cityOptions.selectedIndex].dataset.code;
-  document.getElementById("cityHeader").textContent =
+  document.getElementById('cityHeader').textContent =
     cityOptions.options[cityOptions.selectedIndex].dataset.code;
   getData(newCity);
   nextPray(newCity);
 });
-window.addEventListener("load", () => {
-  getData("Cairo");
-  nextPray("Cairo");
+window.addEventListener('load', () => {
+  getData('Cairo');
+  nextPray('Cairo');
 });
 
 // Time Update
@@ -256,15 +256,15 @@ setInterval(() => {
   const hours = timeNow.getHours();
   const minutes = timeNow.getMinutes();
   const seconds = timeNow.getSeconds();
-  document.getElementById("timeNow").textContent = `${String(hours).padStart(
+  document.getElementById('timeNow').textContent = `${String(hours).padStart(
     2,
     0
   )}:${String(minutes).padStart(2, 0)}:${String(seconds).padStart(2, 0)} ${
-    hours >= 0 && hours < 12 ? "ص" : "م"
+    hours >= 0 && hours < 12 ? 'ص' : 'م'
   }`;
-  document.getElementById("timeNowForNextPray").textContent = `${String(
+  document.getElementById('timeNowForNextPray').textContent = `${String(
     hours
   ).padStart(2, 0)}:${String(minutes).padStart(2, 0)}:${String(
     seconds
-  ).padStart(2, 0)} ${hours >= 0 && hours < 12 ? "ص" : "م"}`;
+  ).padStart(2, 0)} ${hours >= 0 && hours < 12 ? 'ص' : 'م'}`;
 }, 1000);
