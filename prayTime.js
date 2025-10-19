@@ -181,9 +181,8 @@ async function getData(city) {
     document.getElementById('date-hijri').textContent = dateHigri;
   } catch (error) {
     console.error(error.message);
-  } finally{
-      document.getElementById('loader').style.display = 'none'; // 👈 أظهر اللودر
-
+  } finally {
+    document.getElementById('loader').style.display = 'none'; // 👈 أظهر اللودر
   }
 }
 async function nextPray(city) {
@@ -219,7 +218,8 @@ async function nextPray(city) {
       }-${result.data.date.gregorian.day}T${Object.values(timings)[0]}`;
       const nextPrayTime = new Date(refTime).getTime();
       const now = new Date().getTime();
-      let distance = nextPrayTime - now;
+      let distance =  nextPrayTime - now;
+
       let hours = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );

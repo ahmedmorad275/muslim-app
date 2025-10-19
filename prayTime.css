@@ -148,7 +148,7 @@ footer p {
   margin-top: 20px;
   background: linear-gradient(
     to bottom right,
-    oklch(0.596 0.145 163.225),
+    hwb(160 0% 40%),
     oklch(0.432 0.095 166.913)
   );
   border-radius: 20px;
