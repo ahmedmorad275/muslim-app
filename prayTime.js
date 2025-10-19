@@ -156,6 +156,8 @@ for (let i = 0; i < egyGov.length; i++) {
 
 // Start Api Fetch
 async function getData(city) {
+  document.getElementById('loader').style.display = 'flex'; // 👈 أظهر اللودر
+
   let url = `https://api.aladhan.com/v1/timingsByAddress?address=${city},EG`;
   try {
     const response = await fetch(url);
@@ -179,6 +181,9 @@ async function getData(city) {
     document.getElementById('date-hijri').textContent = dateHigri;
   } catch (error) {
     console.error(error.message);
+  } finally{
+      document.getElementById('loader').style.display = 'none'; // 👈 أظهر اللودر
+
   }
 }
 async function nextPray(city) {
