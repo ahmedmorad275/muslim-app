@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: 'Cairo', sans-serif">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>القرآن الكريم</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body style="direction: rtl">
+    <nav class="bg-gradient-to-br from-emerald-500 to-emerald-800 p-2.5">
+      <div class="container m-auto text-white flex items-center">
+        <div
+          class="image bg-emerald-900 rounded-md px-2.5"
+          style="font-size: 40px"
+        >
+          🕌
+        </div>
+        <h2 class="p-2.5 text-2xl">القرآن الكريم</h2>
+      </div>
+    </nav>
+    <div class="container m-auto mt-2.5">
+      <div class="header text-center mb-2.5">
+        <h1 class="text-xl mb-2.5 sm:text-3xl">
+          استمع الي القرآن الكريم كاملًا
+        </h1>
+        <p class="text-emerald-900 text-sm md:text-lg">
+          جعل الله القرآن شفيعًا لنا يوم القيامة
+        </p>
+      </div>
+      <div
+        class="main-content flex flex-col p-2.5 gap-4 items-center sm:flex-row"
+      >
+        <div class="listen-details">
+          <div
+            class="reader mb-2.5 shadow shadow-sm bg-gray-100 w-[320px] border-[1px] p-1.5 border-gray-300 rounded-md"
+          >
+            <h3>اختر القارئ</h3>
+            <select
+              name="reader-index"
+              id="reader-selection"
+              class="border-[1px] p-1.5 border-gray-300 hover:cursor-pointer hover:opacity-80 w-full focus:outline-0 transition-all rounded-md bg-gray-300 my-2.5"
+            ></select>
+          </div>
+          <div
+            class="quran0index shadow shadow-sm bg-gray-100 w-[320px] border-[1px] p-1.5 border-gray-300 rounded-md"
+          >
+            <h3>اختر السورة</h3>
+            <select
+              name="sura-index"
+              id="sura-selection"
+              class="border-[1px] p-1.5 border-gray-300 hover:cursor-pointer hover:opacity-80 w-full focus:outline-0 transition-all rounded-md bg-gray-300 my-2.5"
+            ></select>
+          </div>
+        </div>
+        <div class="vision-details w-[320px] sm:flex-1">
+          <div
+            class="title-details flex gap-1 p-2.5 bg-gradient-to-br rounded-lg from-emerald-500 to-emerald-800 text-white flex-col"
+          >
+            <h2 id="sura-name" class="text-[20px]">الفاتحة</h2>
+            <p id="reader-name">القارئ/ إبراهيم الأخضر</p>
+          </div>
+
+          <div class="audio-details my-2.5 rounded-lg bg-gray-100 m-auto p-4">
+            <div
+              class="progress-bar cursor-pointer h-1 w-full bg-gray-400 mb-1.5 relative"
+            >
+              <div
+                class="progress-fill absolute top-0 left-0 bg-emerald-800 h-1 w-0"
+              ></div>
+              <div
+                class="progress-handle absolute w-[10px] h-[10px] rounded-full bg-emerald-800 left-0 top-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+            <div
+              class="time-show flex justify-between items-center flex-row-reverse mb-4"
+            >
+              <span class="text-emerald-800" id="current-time">00:00</span>
+              <span class="text-emerald-800" id="duration">00:00</span>
+            </div>
+            <div class="flex items-center gap-4 justify-center">
+              <div
+                id="shuffle"
+                class="hover:cursor-pointer text-emerald-900 w-[35px] h-[35px] rounded-full flex items-center justify-center scale-[1.1] bg-gray-200"
+              >
+                <i class="fa-solid fa-shuffle"></i>
+              </div>
+              <div
+                id="prev"
+                class="hover:cursor-pointer text-emerald-900 w-[35px] h-[35px] rounded-full flex items-center justify-center scale-[1.1] bg-gray-200"
+              >
+                <i class="fa-solid fa-backward"></i>
+              </div>
+              <div
+                id="play"
+                class="hover:cursor-pointer bg-emerald-800 w-[45px] h-[45px] rounded-full flex items-center justify-center text-white scale-[1.2]"
+              >
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div
+                id="next"
+                class="hover:cursor-pointer text-emerald-900 w-[35px] h-[35px] rounded-full flex items-center justify-center scale-[1.1] bg-gray-200"
+              >
+                <i class="fa-solid fa-forward"></i>
+              </div>
+              <div
+                id="repeat"
+                class="hover:cursor-pointer text-emerald-900 w-[35px] h-[35px] rounded-full flex items-center justify-center scale-[1.1] bg-gray-200"
+              >
+                <i class="fa-solid fa-repeat"></i>
+              </div>
+            </div>
+            <audio
+              id="sura-play"
+              src="https://server12.mp3quran.net/maher/002.mp3"
+            ></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer style="margin: 1rem auto; width: fit-content; text-align: center">
+      <p style="color: #5e5e5e">All rights reserved | Ahmed Morad</p>
+    </footer>
+    <script src="quran.js"></script>
+  </body>
+</html>
