@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cairo", sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 body {
   direction: rtl;
@@ -75,7 +75,7 @@ nav .header h2 {
 }
 .main-sections {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   padding: 10px;
   text-align: center;
   justify-content: center;
@@ -134,5 +134,10 @@ footer p {
   .glance p {
     width: 75%;
     font-size: 14px;
+  }
+}
+@media (min-width:902px) {
+  .quran-sec {
+    grid-column: 1 / 3;
   }
 }
